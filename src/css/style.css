@@ -203,11 +203,11 @@ img {
  }
 
  .hero__imagen img {
-   width: 30rem;
+   width: 50rem;
    height: auto;
    display: block;
    margin: 0 auto;
-   transform: translateY(-5rem);
+   transform: translateY(-20rem);
    
  }
 }
