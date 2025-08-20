@@ -253,15 +253,46 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
+  .hero__imagen{
+    height: 40rem;
+  }
+
   .hero__imagen img {
-    width: 30rem;
+    width: 50rem;
+    transform: translateY(-5rem);
     height: auto;
     display: block;
     margin: 0 auto;
   }
 }
 
+@media (min-width: 1280px) {
+  .hero {
+    margin-top: 0rem;
+  }
+
+  .hero__contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__imagen{
+    height: 40rem;
+  }
+
+  .hero__imagen img {
+    width: 50rem;
+    transform: translateY(-20rem);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
 /* Animaciones */
+/*
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -292,6 +323,8 @@ img {
     transform: translateY(-10px); 
   }
 }
+
+*/
 
 /* Botones */
 .btn--primario {
