@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Helados Caldós</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header">
+      <div class="header__contenido contenedor">
+        <div class="header__logo">
+          <img src="src/img/logo.png" alt="imagen logo" />
+        </div>
+
+        <div class="header__navegacion">
+          <nav>
+            <a href="#" class="header__enlace">Inicio</a>
+            <a href="#" class="header__enlace">Sabores</a>
+            <a href="#" class="header__enlace">Tienda</a>
+            <a href="#" class="header__enlace">Sobre nosotros</a>
+          </nav>
+        </div>
+
+        <a class="header__navegacion--contacto" href="#">Contáctanos</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__contenido contenedor">
+        <div class="hero__texto">
+          <h1 class="hero__heading">
+            Los sabores más frescos de <span>Crevillente</span>
+          </h1>
+          <p class="hero__descripcion">
+            Helados artesanos elaborados con ingredientes naturales. 
+          </p>
+          <p class="hero__descripcion">Tradición
+            familiar desde hace años en el corazón del baix Vinalopó.</p>
+          <a href="#sabores" class="btn btn--primario"
+            >Descubre nuestros sabores</a
+          >
+        </div>
+        <div class="hero__imagen">
+          <img src="/src/img/helado.png" alt="imagen helado" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
