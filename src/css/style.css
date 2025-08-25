@@ -448,11 +448,17 @@ img {
 }
 
 .destacado__heading--horchata {
-  color: #f2e9d9;
+  color: #D2691E;
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(210, 105, 30, 0.3);
 }
 .destacado__heading--limon {
-  color: var(--limon);
+   color: #E6B800;
+   font-size: 2.8rem;
+   text-shadow: 2px 2px 4px rgba(230, 184, 0, 0.4);
 }
 .destacado__heading--cebada {
-  color: #614b22;
+  color: #8B4513;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
 }
