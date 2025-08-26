@@ -440,8 +440,6 @@ img {
   padding: 0 1rem;
 }
 
-
-
 .destacado:hover {
   box-shadow: 0 8px 25px rgba(74, 144, 226, 0.2);
   transform: translateY(-9px);
@@ -472,4 +470,96 @@ img {
   text-shadow: 2px 2px 4px rgba(74, 144, 226, 0.3);
 }
 
+.sabores {
+  background-color: var(--menta);
+}
 
+.sabores__contenido {
+  padding: 2rem;
+}
+
+.sabores__heading {
+  color: var(--azulPrincipal);
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.carousel {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.carousel__viewport{
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel__heading {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.carousel__btn {
+  border-radius: 10rem;
+  padding: 2rem;
+  color: var(--blanco);
+  background-color: #4a90e2;
+}
+
+.carousel__btn--prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+
+
+.carousel__btn--next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+}
+
+@media (min-width: 1441px) { 
+  .carousel__btn {
+    padding: 4rem;
+  }
+
+  .carousel__btn--next{
+    right: -7%;
+  }
+
+  .carousel__btn--prev {
+    left: -7%;
+  }
+}
+
+
+.carousel__container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  margin: 0;
+  transition: transform 0.5s ease;
+}
+
+.sabor {
+  flex: 0 0 100%; /* Siempre ocupa el 100% del contenedor */
+  background: linear-gradient(135deg, var(--blanco) 0%, var(--menta) 100%);
+  border: 2px solid var(--azulClaro);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+@media (min-width: 768px) {
+  .sabor {
+    flex: 0 0 calc(33.33% - 1.33rem); /* Ocupa el 38% del contenedor en pantallas medianas */
+  }
+
+  .carousel__container {
+    margin: 0 2rem; /* ✅ Márgenes solo en desktop */
+  }
+}
