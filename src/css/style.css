@@ -172,7 +172,7 @@ img {
   border-radius: 50%;
   opacity: 0.4;
   z-index: -1;
-  animation: float 3s ease-in-out infinite reverse;
+  animation: 3s ease-in-out infinite reverse;
 }
 
 .hero__contenido {
@@ -240,7 +240,6 @@ img {
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  animation: float 3s ease-in-out infinite;
 }
 
 @media (min-width: 768px) {
@@ -279,12 +278,10 @@ img {
     width: 60rem;
     height: auto;
   }
-  
 }
 
-
 @media (min-width: 1020px) and (max-width: 1279px) {
-  .hero__imagen img{
+  .hero__imagen img {
     transform: translateY(-15rem);
   }
 }
@@ -313,7 +310,7 @@ img {
 }
 
 /* Animaciones */
-/*
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -335,17 +332,6 @@ img {
     transform: translateX(0);
   }
 }
-
-@keyframes float {
-  0%, 100% { 
-    transform: translateY(0px); 
-  }
-  50% { 
-    transform: translateY(-10px); 
-  }
-}
-
-*/
 
 /* Botones */
 .btn--primario {
@@ -369,9 +355,15 @@ img {
 /* Destacados */
 
 .destacados {
-  background: linear-gradient(to top, transparent 0%, var(--menta) 0%, var(--azulClaro) 100%);
+  margin-top: -1rem;
+  padding-top: 2rem;
+  background: linear-gradient(
+    to top,
+    transparent 20%,
+    var(--menta) 40%,
+    var(--azulClaro) 100%
+  );
   text-align: center;
-   
 }
 
 .destacados__heading {
@@ -413,6 +405,9 @@ img {
 }
 
 @media (min-width: 1200px) {
+  .destacado {
+    padding-top: 2rem;
+  }
   .destacados__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -421,20 +416,35 @@ img {
 }
 
 .destacado {
-  background-color: var(--blanco);
+  background: linear-gradient(
+    135deg,
+    #fff5f5 0%,
+    #ffeded 50%,
+    var(--fresa) 100%
+  );
   border: 0.6rem solid var(--azulClaro);
   border-radius: 1rem;
   text-align: center;
-  color: #555;
   margin-bottom: 2rem;
   padding: 2rem;
   transition: all 0.3s ease;
 }
 
+.destacado__descripcion {
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+
+
 .destacado:hover {
   box-shadow: 0 8px 25px rgba(74, 144, 226, 0.2);
-  transform: translateY(-7px);
-  
+  transform: translateY(-9px);
 }
 
 .destacado:last-child {
@@ -454,18 +464,12 @@ img {
   }
 }
 
-.destacado__heading--horchata {
-  color: #D2691E;
-  font-size: 2.8rem;
-  text-shadow: 2px 2px 4px rgba(210, 105, 30, 0.3);
-}
-.destacado__heading--limon {
-   color: #E6B800;
-   font-size: 2.8rem;
-   text-shadow: 2px 2px 4px rgba(230, 184, 0, 0.4);
-}
+.destacado__heading--horchata,
+.destacado__heading--limon,
 .destacado__heading--cebada {
-  color: #8B4513;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+  color: var(--azulPrincipal);
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(74, 144, 226, 0.3);
 }
+
+
