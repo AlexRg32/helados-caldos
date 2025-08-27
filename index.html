@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="src/css/normalize.css" />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
@@ -23,7 +24,7 @@
         <div class="header__navegacion">
           <nav>
             <a href="#" class="header__enlace">Inicio</a>
-            <a href="#" class="header__enlace">Sabores</a>
+            <a href="#" class="header__enlace">Productos</a>
             <a href="#" class="header__enlace">Tienda</a>
             <a href="#" class="header__enlace">Sobre nosotros</a>
           </nav>
@@ -51,7 +52,7 @@
             >
           </div>
           <div class="hero__imagen">
-            <img src="src/img/limon.png" alt="imagen helado" />
+            <img src="src/img/limon_destacado.png" alt="imagen helado" />
           </div>
         </div>
       </section>
@@ -74,19 +75,7 @@
               </div>
             </div>
 
-            <div class="destacado destacado--limon">
-              <h2 class="destacado__heading--limon">LIMÓN</h2>
-              <p class="destacado__descripcion">
-                Intenso sabor a limón natural con el punto perfecto de acidez.
-                Helado cremoso que refresca y despierta los sentidos.
-              </p>
-              <div class="destacado__imagen">
-                <img
-                  src="src/img/limon_destacado.png"
-                  alt="imagen horchata"
-                />
-              </div>
-            </div>
+           
 
             <div class="destacado destacado--cebada">
               <h2 class="destacado__heading--cebada">CEBADA</h2>
@@ -103,18 +92,36 @@
               </div>
               </div>
             </div>
+
+             <div class="destacado destacado--limon">
+              <h2 class="destacado__heading--limon">LIMÓN</h2>
+              <p class="destacado__descripcion">
+                Intenso sabor a limón natural con el punto perfecto de acidez.
+                Helado cremoso que refresca y despierta los sentidos.
+              </p>
+              <div class="destacado__imagen">
+                <img
+                  src="src/img/limon_destacado.png"
+                  alt="imagen horchata"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="sabores">
-        <button class="carousel__btn carousel__btn--prev">‹</button>
-        <button class="carousel__btn carousel__btn--next">›</button>
+        <button class="carousel__btn carousel__btn--prev">
+  <i class="fas fa-chevron-left"></i>
+</button>
+<button class="carousel__btn carousel__btn--next">
+  <i class="fas fa-chevron-right"></i>
+</button>
         <div class="sabores__contenido contenedor">
           <h2 class="sabores__heading">Nuestros productos</h2>
 
           <div class="carousel carousel--granizados">
-            <h2 class="carousel__heading">GRANIZADOS</h2>
+            <h3 class="carousel__heading">GRANIZADOS</h3>
 
             <div class="carousel__contenido">
               <div class="sabor">
@@ -189,6 +196,13 @@
 
             <nav></nav>
           </div>
+        </div>
+      </section>
+
+      <section class="sobre-nosotros">
+        <div class="sobre-nosotros__contenido">
+          <h2 class="sobre-nosotros__heading">Sobre <span>Nosotros</span></h2>
+         
         </div>
       </section>
     </main>

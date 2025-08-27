@@ -492,6 +492,11 @@ img {
   overflow: hidden;
 }
 
+.carousel__heading{
+  font-size: 3.8rem;
+  color: var(--azulPrincipal);
+}
+
 .carousel__contenido {
   display: flex;
   width: 100%;
@@ -508,15 +513,21 @@ img {
 .carousel__btn {
   position: absolute;
   top: 55%;
-  background: var(--azulPrincipal);
+  background: transparent;
+  color: #000; /* ✅ Añadir color para los iconos */
   border: none;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
   transition: background 0.3s ease;
+  display: flex; /* ✅ Para centrar el icono */
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .carousel__btn--prev {
   left: 2%;
@@ -524,6 +535,19 @@ img {
 
 .carousel__btn--next {
   right: 2%;
+}
+
+@media (min-width: 768px) {
+  .carousel__btn {
+    font-size: 4rem;
+  }
+  .carousel__btn--next {
+    right: 4%;
+  }
+  .carousel__btn--prev {
+  left: 4%;
+}
+  
 }
 
 .sabor {
@@ -550,4 +574,46 @@ img {
   object-fit: contain;
   border-radius: 1rem;
   
+}
+
+/* Sobre nosotros */
+
+.sobre-nosotros__contenido {
+  height: 60rem;
+  padding: 5rem 2rem;
+  background-image: url("../img/bg-sobre-nosotros.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-nosotros__contenido::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.sobre-nosotros__contenido > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sobre-nosotros__heading {
+  font-size: 5rem;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.sobre-nosotros__heading span {
+  color: var(--azulPrincipal);
 }
