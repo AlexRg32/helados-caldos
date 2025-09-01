@@ -419,6 +419,10 @@ img {
   .destacado {
     margin-bottom: 0;
   }
+
+  .destacado__descripcion{
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -514,7 +518,7 @@ img {
   position: absolute;
   top: 55%;
   background: transparent;
-  color: #000; /* ✅ Añadir color para los iconos */
+  color: #000; 
   border: none;
   padding: 2rem 2rem;
   font-size: 2rem;
@@ -522,7 +526,7 @@ img {
   z-index: 10;
   border-radius: 50%;
   transition: background 0.3s ease;
-  display: flex; /* ✅ Para centrar el icono */
+  display: flex; 
   align-items: center;
   justify-content: center;
 }
@@ -555,6 +559,7 @@ img {
   transition: transform 0.3s ease;
   padding: 3rem;
   text-align: center;
+  
 }
 
 @media (min-width: 768px) {
@@ -567,6 +572,7 @@ img {
   width: 100%;
   height: 40rem;
   margin-bottom: 2rem;
+ 
 }
 .sabor__imagen img {
   width: 100%;
@@ -576,7 +582,22 @@ img {
   
 }
 
+@media (min-width: 768px) {
+
+  .sabor__nombre{
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+    font-weight: 900;
+  }
+  .sabor__precio{
+    font-size: 2rem;
+  }
+  
+}
+
 /* Sobre nosotros */
+
+/*prototipo 1 
 
 .sobre-nosotros__contenido {
   height: 60rem;
@@ -617,3 +638,50 @@ img {
 .sobre-nosotros__heading span {
   color: var(--azulPrincipal);
 }
+
+*/
+
+.sobre-nosotros__contenido{
+  padding-top: 6rem;
+  background-color: var(--menta);
+}
+
+.sobre-nosotros__heading{
+  text-align: center;
+  font-size: 4.5rem;
+  color: var(--azulPrincipal);
+  line-height: 1.2;
+}
+
+.sobre-nosotros__grid{
+  display: grid;
+  
+}
+
+@media (min-width: 768px) {
+
+  .sobre-nosotros__contenido{
+    padding: 5rem 2rem 10rem 2rem;
+  }
+
+  .sobre-nosotros__grid{
+    margin-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .sobre-nosotros__grid >:nth-child(3) {
+    grid-row: 2/ 3;
+    grid-column: 2 / 3;
+  }
+
+  .sobre-nosotros__imagen{
+    width: 60rem;
+    height: auto;
+  }
+  
+}
+
+
+
