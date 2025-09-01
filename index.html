@@ -1,229 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Helados Caldós</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__contenido contenedor">
-        <div class="header__logo">
-          <img src="src/img/logo.png" alt="imagen logo" />
-        </div>
-
-        <div class="header__navegacion">
-          <nav>
-            <a href="#" class="header__enlace">Inicio</a>
-            <a href="#" class="header__enlace">Productos</a>
-            <a href="#" class="header__enlace">Tienda</a>
-            <a href="#" class="header__enlace">Sobre nosotros</a>
-          </nav>
-        </div>
-
-        <a class="header__navegacion--contacto" href="#">Contáctanos</a>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helados Caldós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__contenido contenedor">
+      <div class="header__logo">
+        <img src="src/img/logo.png" alt="Logo Helados Caldós">
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero__contenido contenedor">
-          <div class="hero__texto">
-            <h1 class="hero__heading">
-              Los sabores más frescos de <span>Crevillente</span>
-            </h1>
-            <p class="hero__descripcion">
-              Helados artesanos elaborados con ingredientes naturales.
-            </p>
-            <p class="hero__descripcion">
-              Tradición familiar desde hace años en el corazón del baix
-              Vinalopó.
-            </p>
-            <a href="#sabores" class="btn btn--primario"
-              >Descubre nuestros sabores</a
-            >
-          </div>
-          <div class="hero__imagen">
-            <img src="src/img/limon_destacado.png" alt="imagen helado" />
-          </div>
-        </div>
-      </section>
+      <nav class="header__navegacion">
+        <a href="#" class="header__enlace">Inicio</a>
+        <a href="#" class="header__enlace">Productos</a>
+        <a href="#" class="header__enlace">Tienda</a>
+        <a href="#" class="header__enlace">Sobre nosotros</a>
+      </nav>
+      <a class="header__navegacion--contacto" href="#">Contáctanos</a>
+    </div>
+  </header>
 
-      <section class="destacados">
-        <div class="destacados__contenido contenedor">
-          <h2 class="destacados__heading">Nuestras Especialidades</h2>
-          <div class="destacados__grid">
-            <div class="destacado destacado--horchata">
-              <h2 class="destacado__heading--horchata">HORCHATA</h2>
-              <p class="destacado__descripcion">
-                Refrescante horchata artesanal elaborada con chufas valencianas.
-                Cremosa textura y sabor tradicional que conquista paladares.
-              </p>
+  <main>
+    <section class="hero">
+      <div class="hero__contenido contenedor">
+        <div class="hero__texto">
+          <h1 class="hero__heading">Los sabores más frescos de <span>Crevillente</span></h1>
+          <p class="hero__descripcion">Helados artesanos elaborados con ingredientes naturales.</p>
+          <p class="hero__descripcion">Tradición familiar desde hace años en el corazón del baix Vinalopó.</p>
+          <a href="#sabores" class="btn btn--primario">Descubre nuestros sabores</a>
+        </div>
+        <div class="hero__imagen">
+          <img src="src/img/limon_destacado.png" alt="Helado de limón">
+        </div>
+      </div>
+    </section>
+
+    <section class="destacados">
+      <div class="destacados__contenido contenedor">
+        <h2 class="destacados__heading">Nuestras Especialidades</h2>
+        <div class="destacados__grid">
+          <div class="destacado destacado--horchata">
+            <h2 class="destacado__heading--horchata">HORCHATA</h2>
+            <p class="destacado__descripcion">Refrescante horchata artesanal elaborada con chufas valencianas. Cremosa textura y sabor tradicional que conquista paladares.</p>
+            <div class="destacado__imagen">
+              <img src="src/img/horchata_destacado.png" alt="Horchata">
+            </div>
+          </div>
+
+          <div class="destacado destacado--cebada">
+            <h2 class="destacado__heading--cebada">CEBADA</h2>
+            <div class="destacado--ñapa">
+              <p class="destacado__descripcion">Bebida refrescante de cebada con malta tostada. Sabor único y propiedades digestivas en cada sorbo.</p>
               <div class="destacado__imagen">
-                <img
-                  src="src/img/horchata_destacado.png"
-                  alt="imagen horchata"
-                />
-              </div>
-            </div>
-
-           
-
-            <div class="destacado destacado--cebada">
-              <h2 class="destacado__heading--cebada">CEBADA</h2>
-              <div class="destacado--ñapa">
-                <p class="destacado__descripcion">
-                  Bebida refrescante de cebada con malta tostada. Sabor único y
-                  propiedades digestivas en cada sorbo.
-                </p>
-                <div class="destacado__imagen">
-                <img
-                  src="src/img/cebada_destacado.png"
-                  alt="imagen horchata"
-                />
-              </div>
-              </div>
-            </div>
-
-             <div class="destacado destacado--limon">
-              <h2 class="destacado__heading--limon">LIMÓN</h2>
-              <p class="destacado__descripcion">
-                Intenso sabor a limón natural con el punto perfecto de acidez.
-                Helado cremoso que refresca y despierta los sentidos.
-              </p>
-              <div class="destacado__imagen">
-                <img
-                  src="src/img/limon_destacado.png"
-                  alt="imagen horchata"
-                />
+                <img src="src/img/cebada_destacado.png" alt="Cebada">
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="sabores">
-        <button class="carousel__btn carousel__btn--prev">
-  <i class="fas fa-chevron-left"></i>
-</button>
-<button class="carousel__btn carousel__btn--next">
-  <i class="fas fa-chevron-right"></i>
-</button>
-        <div class="sabores__contenido contenedor">
-          <h2 class="sabores__heading">Nuestros productos</h2>
-
-          <div class="carousel carousel--granizados">
-            <h3 class="carousel__heading">GRANIZADOS</h3>
-
-            <div class="carousel__contenido">
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/limon_destacado.png" alt="" />
-                </div>
-                <h4 class="sabor__nombre">Limón</h4>
-                <p class="sabor__precio">
-                  Refrescante granizado de limón natural con el punto perfecto
-                  de acidez. Ideal para los días calurosos de verano.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/cebada_destacado.png" alt="Granizado Cebada" />
-                </div>
-                <h4 class="sabor__nombre">Cebada</h4>
-                <p class="sabor__precio">
-                  Tradicional granizado de cebada con malta tostada. Sabor único
-                  y propiedades digestivas que refrescan el paladar.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/mojito.png" alt="Granizado Mojito" />
-                </div>
-                <h4 class="sabor__nombre">Mojito</h4>
-                <p class="sabor__precio">
-                  Explosivo granizado de mojito con menta fresca y lima.
-                  Sensación tropical que transporta a las mejores playas.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/horchata.png" alt="Granizado Horchata" />
-                </div>
-                <h4 class="sabor__nombre">Horchata</h4>
-                <p class="sabor__precio">
-                  Cremoso granizado de horchata valenciana con chufas
-                  auténticas. Tradición mediterránea en cada sorbo refrescante.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/cafe.png" alt="Granizado Café" />
-                </div>
-                <h4 class="sabor__nombre">Café</h4>
-                <p class="sabor__precio">
-                  Intenso granizado de café con granos seleccionados. Energía y
-                  frescor unidos en una experiencia única.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img
-                    src="src/img/mojitorosa.png"
-                    alt="Granizado Mojito Rosa"
-                  />
-                </div>
-                <h4 class="sabor__nombre">Mojito Rosa</h4>
-                <p class="sabor__precio">
-                  Delicado granizado de mojito con toque de frutos rojos.
-                  Elegancia y frescor en una combinación irresistible.
-                </p>
-              </div>
-            </div>
-
-            <nav></nav>
-          </div>
-        </div>
-      </section>
-
-      <section class="sobre-nosotros">
-        <div class="sobre-nosotros__contenido">
-          <h2 class="sobre-nosotros__heading">Sobre <span>Nosotros</span></h2>
-          <div class="sobre-nosotros__grid">
-            <div class="sobre-nosotros__imagen">
-              <img src="./src/img/maquinas.jpg" alt="imagen sobre-nosotros">
-            </div>
-
-            <div class="sobre-nosotros__historia">
-              <h3>Nuestra Historia</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam ducimus dolores perferendis quasi dolor ratione tempore, quae tenetur laboriosam modi necessitatibus sequi excepturi itaque. Dolores unde quisquam soluta error?</p>
-            </div>
-
-            <div class="sobre-nosotros__imagen">
-              <img src="src/img/maquinas2.jpeg" alt="imagen-sobre-nosotros">
-            </div>
-
-            <div class="sobre-nosotros__tradicion">
-              <h3>Nuestra Tradición</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam ducimus dolores perferendis quasi dolor ratione tempore, quae tenetur laboriosam modi necessitatibus sequi excepturi itaque. Dolores unde quisquam soluta error?</p>
+          <div class="destacado destacado--limon">
+            <h2 class="destacado__heading--limon">LIMÓN</h2>
+            <p class="destacado__descripcion">Intenso sabor a limón natural con el punto perfecto de acidez. Helado cremoso que refresca y despierta los sentidos.</p>
+            <div class="destacado__imagen">
+              <img src="src/img/limon_destacado.png" alt="Limón">
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
-  <script type="module" src="/src/main.js"></script>
+      </div>
+    </section>
+
+    <section class="sabores">
+      <button class="carousel__btn carousel__btn--prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel__btn carousel__btn--next"><i class="fas fa-chevron-right"></i></button>
+      
+      <div class="sabores__contenido contenedor">
+        <h2 class="sabores__heading">Nuestros productos</h2>
+        <div class="carousel carousel--granizados">
+          <h3 class="carousel__heading">GRANIZADOS</h3>
+          <div class="carousel__contenido">
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/limon_destacado.png" alt="Granizado Limón">
+              </div>
+              <h4 class="sabor__nombre">Limón</h4>
+              <p class="sabor__precio">Refrescante granizado de limón natural con el punto perfecto de acidez. Ideal para los días calurosos de verano.</p>
+            </div>
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/cebada_destacado.png" alt="Granizado Cebada">
+              </div>
+              <h4 class="sabor__nombre">Cebada</h4>
+              <p class="sabor__precio">Tradicional granizado de cebada con malta tostada. Sabor único y propiedades digestivas que refrescan el paladar.</p>
+            </div>
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/mojito.png" alt="Granizado Mojito">
+              </div>
+              <h4 class="sabor__nombre">Mojito</h4>
+              <p class="sabor__precio">Explosivo granizado de mojito con menta fresca y lima. Sensación tropical que transporta a las mejores playas.</p>
+            </div>
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/horchata.png" alt="Granizado Horchata">
+              </div>
+              <h4 class="sabor__nombre">Horchata</h4>
+              <p class="sabor__precio">Cremoso granizado de horchata valenciana con chufas auténticas. Tradición mediterránea en cada sorbo refrescante.</p>
+            </div>
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/cafe.png" alt="Granizado Café">
+              </div>
+              <h4 class="sabor__nombre">Café</h4>
+              <p class="sabor__precio">Intenso granizado de café con granos seleccionados. Energía y frescor unidos en una experiencia única.</p>
+            </div>
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/mojitorosa.png" alt="Granizado Mojito Rosa">
+              </div>
+              <h4 class="sabor__nombre">Mojito Rosa</h4>
+              <p class="sabor__precio">Delicado granizado de mojito con toque de frutos rojos. Elegancia y frescor en una combinación irresistible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-nosotros">
+      <div class="sobre-nosotros__contenido contenedor">
+        <h2 class="sobre-nosotros__heading">Sobre <span>Nosotros</span></h2>
+        <div class="sobre-nosotros__grid">
+          <div class="sobre-nosotros__imagen">
+            <img src="src/img/maquinas.jpg" alt="Máquinas de helados">
+          </div>
+          <div class="sobre-nosotros__texto historia">
+            <h3>Nuestra historia familiar desde 1970 en el corazón de Crevillente</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam ducimus dolores perferendis quasi dolor ratione tempore, quae tenetur laboriosam modi necessitatibus sequi excepturi itaque. Dolores unde quisquam soluta error?</p>
+          </div>
+          <div class="sobre-nosotros__imagen">
+            <img src="src/img/maquinas2.jpeg" alt="Proceso artesanal">
+          </div>
+          <div class="sobre-nosotros__texto tradicion">
+            <h3>Tradición artesanal y sabores auténticos que conquistan desde décadas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam ducimus dolores perferendis quasi dolor ratione tempore, quae tenetur laboriosam modi necessitatibus sequi excepturi itaque. Dolores unde quisquam soluta error?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="src/main.js"></script>
+</body>
 </html>
