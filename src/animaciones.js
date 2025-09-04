@@ -104,27 +104,31 @@ gsap
 
 //animacion para carrusel
 
-const botonSabores = document.querySelector(".btn--primario");
+function animarBotones(){
+  const botonesPrimarios = document.querySelectorAll(".btn");
 
-botonSabores.addEventListener("mouseenter", () => {
-  gsap.to(botonSabores, {
-    scale: 1.1,
-    backgroundColor: "#fff9c4",
-    color: "#fff",
-    duration: 0.3,
-    ease: "power2.out",
-  });
-});
+  botonesPrimarios.forEach((btn) => {
+    btn.addEventListener("mouseenter", () => {
+      gsap.to(btn, {
+        scale: 1.1,
+        boxShadow: "0 8px 15px rgba(0,0,0,0.2)",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    });
 
-botonSabores.addEventListener("mouseleave", () => {
-  gsap.to(botonSabores, {
-    scale: 1,
-    backgroundColor: "#ff6f61",
-    color: "#fff",
-    duration: 0.3,
-    ease: "power2.out",
+    btn.addEventListener("mouseleave", () => {
+      gsap.to(btn, {
+        scale: 1,
+        boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    });
   });
-});
+}
+
+animarBotones();
 
 //animaciones para destacado
 const destacados = document.querySelectorAll(".destacado");

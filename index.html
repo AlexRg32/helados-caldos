@@ -1,231 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Helados Caldós</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
- 
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__contenido contenedor">
-        <div class="header__logo">
-          <img src="src/img/logo.png" alt="imagen logo" />
-        </div>
 
-        <div class="header__navegacion">
-          <nav>
-            <a href="#" class="header__enlace">Inicio</a>
-            <a href="#" class="header__enlace">Productos</a>
-            <a href="#" class="header__enlace">Tienda</a>
-            <a href="#" class="header__enlace">Sobre nosotros</a>
-          </nav>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helados Caldós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="src/css/normalize.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
 
-        <a class="header__navegacion--contacto" href="#">Contáctanos</a>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__contenido contenedor">
+      <div class="header__logo">
+        <img src="src/img/logo.png" alt="imagen logo" />
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero__contenido contenedor">
-          <div class="hero__texto">
-            <h1 class="hero__heading">
-              Los sabores más frescos de <span>Crevillente</span>
-            </h1>
-            <p class="hero__descripcion">
-              Helados artesanos elaborados con ingredientes naturales.
+
+      <div class="header__navegacion">
+        <nav>
+          <a href="#hero" class="header__enlace">Inicio</a>
+          <a href="#destacados" class="header__enlace">Destacados</a>
+          <a href="#productos" class="header__enlace">Tienda</a>
+          <a href="#nosotros" class="header__enlace">Sobre nosotros</a>
+        </nav>
+      </div>
+
+      <a class="header__navegacion--contacto" href="#contacto">Contáctanos</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__contenido contenedor">
+        <div class="hero__texto">
+          <h1 class="hero__heading">
+            Los sabores más frescos de <span>Crevillente</span>
+          </h1>
+          <p class="hero__descripcion">
+            Helados artesanos elaborados con ingredientes naturales.
+          </p>
+          <p class="hero__descripcion">
+            Tradición familiar desde hace años en el corazón del baix
+            Vinalopó.
+          </p>
+          <a href="#sabores" class="btn btn--primario">Descubre nuestros sabores</a>
+        </div>
+        <div class="hero__imagen">
+          <img src="src/img/limon_destacado.png" alt="imagen helado" />
+        </div>
+      </div>
+    </section>
+
+    <section class="destacados" id="destacados">
+      <div class="destacados__contenido contenedor">
+        <h2 class="destacados__heading">Nuestras Especialidades</h2>
+        <div class="destacados__grid">
+          <div class="destacado destacado--horchata">
+            <h2 class="destacado__heading--horchata">HORCHATA</h2>
+            <p class="destacado__descripcion">
+              Refrescante horchata artesanal elaborada con chufas valencianas.
+              Cremosa textura y sabor tradicional que conquista paladares.
             </p>
-            <p class="hero__descripcion">
-              Tradición familiar desde hace años en el corazón del baix
-              Vinalopó.
+            <div class="destacado__imagen">
+              <img src="src/img/horchata_destacado.png" alt="imagen horchata" />
+            </div>
+          </div>
+
+          <div class="destacado destacado--limon">
+            <h2 class="destacado__heading--limon">LIMÓN</h2>
+            <p class="destacado__descripcion">
+              Intenso sabor a limón natural con el punto perfecto de acidez.
+              Helado cremoso que refresca y despierta los sentidos.
             </p>
-            <a href="#sabores" class="btn btn--primario"
-              >Descubre nuestros sabores</a
-            >
+            <div class="destacado__imagen">
+              <img src="src/img/limon_destacado.png" alt="imagen horchata" />
+            </div>
           </div>
-          <div class="hero__imagen">
-            <img src="src/img/limon_destacado.png" alt="imagen helado" />
-          </div>
-        </div>
-      </section>
 
-      <section class="destacados">
-        <div class="destacados__contenido contenedor">
-          <h2 class="destacados__heading">Nuestras Especialidades</h2>
-          <div class="destacados__grid">
-            <div class="destacado destacado--horchata">
-              <h2 class="destacado__heading--horchata">HORCHATA</h2>
-              <p class="destacado__descripcion">
-                Refrescante horchata artesanal elaborada con chufas valencianas.
-                Cremosa textura y sabor tradicional que conquista paladares.
+
+          <div class="destacado destacado--cebada">
+            <h2 class="destacado__heading--cebada">CEBADA</h2>
+            <div class="destacado--ñapa">
+              <p class="destacado__descripcion--cebada">
+                Bebida refrescante de cebada con malta tostada. Sabor único y
+                propiedades digestivas en cada sorbo.
               </p>
-              <div class="destacado__imagen">
-                <img
-                  src="src/img/horchata_destacado.png"
-                  alt="imagen horchata"
-                />
+              <div class="destacado__imagen destacado__imagen--cebada">
+                <img src="src/img/cebada_destacado.png" alt="imagen horchata" />
               </div>
             </div>
+          </div>
 
-              <div class="destacado destacado--limon">
-              <h2 class="destacado__heading--limon">LIMÓN</h2>
-              <p class="destacado__descripcion">
-                Intenso sabor a limón natural con el punto perfecto de acidez.
-                Helado cremoso que refresca y despierta los sentidos.
+
+        </div>
+      </div>
+    </section>
+
+    <section class="sabores" id="productos">
+      <button class="carousel__btn carousel__btn--prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel__btn carousel__btn--next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="sabores__contenido contenedor">
+        <h2 class="sabores__heading">Nuestros productos</h2>
+
+        <div class="carousel carousel--granizados">
+          <h3 class="carousel__heading">GRANIZADOS</h3>
+
+          <div class="carousel__contenido">
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/limon_destacado.png" alt="" />
+              </div>
+              <h4 class="sabor__nombre">Limón</h4>
+              <p class="sabor__precio">
+                Refrescante granizado de limón natural con el punto perfecto
+                de acidez. Ideal para los días calurosos de verano.
               </p>
-              <div class="destacado__imagen">
-                <img
-                  src="src/img/limon_destacado.png"
-                  alt="imagen horchata"
-                />
-              </div>
-            </div>
-           
-
-            <div class="destacado destacado--cebada">
-              <h2 class="destacado__heading--cebada">CEBADA</h2>
-              <div class="destacado--ñapa">
-                <p class="destacado__descripcion--cebada">
-                  Bebida refrescante de cebada con malta tostada. Sabor único y
-                  propiedades digestivas en cada sorbo.
-                </p>
-                <div class="destacado__imagen destacado__imagen--cebada">
-                <img
-                  src="src/img/cebada_destacado.png"
-                  alt="imagen horchata"
-                />
-              </div>
-              </div>
             </div>
 
-           
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/cebada_destacado.png" alt="Granizado Cebada" />
+              </div>
+              <h4 class="sabor__nombre">Cebada</h4>
+              <p class="sabor__precio">
+                Tradicional granizado de cebada con malta tostada. Sabor único
+                y propiedades digestivas que refrescan el paladar.
+              </p>
+            </div>
+
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/mojito.png" alt="Granizado Mojito" />
+              </div>
+              <h4 class="sabor__nombre">Mojito</h4>
+              <p class="sabor__precio">
+                Explosivo granizado de mojito con menta fresca y lima.
+                Sensación tropical que transporta a las mejores playas.
+              </p>
+            </div>
+
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/horchata.png" alt="Granizado Horchata" />
+              </div>
+              <h4 class="sabor__nombre">Horchata</h4>
+              <p class="sabor__precio">
+                Cremoso granizado de horchata valenciana con chufas
+                auténticas. Tradición mediterránea en cada sorbo refrescante.
+              </p>
+            </div>
+
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/cafe.png" alt="Granizado Café" />
+              </div>
+              <h4 class="sabor__nombre">Café</h4>
+              <p class="sabor__precio">
+                Intenso granizado de café con granos seleccionados. Energía y
+                frescor unidos en una experiencia única.
+              </p>
+            </div>
+
+            <div class="sabor">
+              <div class="sabor__imagen">
+                <img src="src/img/mojitorosa.png" alt="Granizado Mojito Rosa" />
+              </div>
+              <h4 class="sabor__nombre">Mojito Rosa</h4>
+              <p class="sabor__precio">
+                Delicado granizado de mojito con toque de frutos rojos.
+                Elegancia y frescor en una combinación irresistible.
+              </p>
+            </div>
+          </div>
+
+          <nav></nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-nosotros" id="nosotros">
+      <div class="sobre-nosotros__contenido">
+        <div class="sobre-nosotros__hero">
+          <h1 class="sobre-nosotros__heading">Sobre Nosotros</h1>
+        </div>
+        <div class="sobre-nosotros__grid">
+
+          <div class="imagen__historia">
+            <img class="" src="./src/img/maquinas.jpg" alt="Nuestras máquinas de helados">
+          </div>
+
+          <div class="texto__historia">
+            <h3 class="sobre-nosotros__historia--heading">Nuestra Historia</h3>
+            <p>Nuestra historia comenzó hace más de 20 años cuando decidimos apostar por la elaboración artesanal de
+              helados y granizados. Con una máquina tradicional y mucha ilusión, empezamos sirviendo a los vecinos de
+              nuestro barrio en Crevillente.</p>
+
+            <p>Mantenemos las recetas familiares que han pasado de generación en generación, respetando los métodos
+              tradicionales de elaboración. Creemos firmemente en preservar los sabores auténticos que forman parte de
+              nuestra cultura mediterránea.</p>
+
+            <p>Hoy en día somos reconocidos en toda la comarca del Baix Vinalopó. Nuestros clientes vienen desde Elche y
+              Alicante para disfrutar de nuestros granizados de limón y horchata tradicional. Porque cuando algo se hace
+              bien, el tiempo lo demuestra.</p>
+          </div>
+
+        </div>
+
+    </section>
+
+    <section class="contacto" id="contacto">
+  <div class="contacto__contenido contenedor">
+    <div class="contacto__hero">
+      <h2 class="contacto__heading">¡Ven a visitarnos!</h2>
+      <p class="contacto__descripcion">
+        Te esperamos en nuestro local de Crevillente para que disfrutes 
+        de nuestros sabores artesanales.
+      </p>
+    </div>
+
+    <div class="contacto__grid">
+      <!-- Información de contacto -->
+      <div class="contacto__info">
+        <div class="contacto__card contacto__card--ubicacion">
+          <div class="contacto__icono">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="contacto__card-titulo">Ubicación</h3>
+          <p class="contacto__card-texto">
+            Calle Reverendo Pasqual Martínez 30<br>
+            03330 Crevillente<br>
+            Alicante, España
+          </p>
+        </div>
+
+        <div class="contacto__card contacto__card--horarios">
+          <div class="contacto__icono">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="contacto__card-titulo">Horarios</h3>
+          <p class="contacto__card-texto">
+            <strong>Lunes - Viernes:</strong> 9:00 - 21:00<br>
+            <strong>Domingos:</strong> 9:00 - 20:00
+          </p>
+        </div>
+
+        <div class="contacto__card contacto__card--telefono">
+          <div class="contacto__icono">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3 class="contacto__card-titulo">Teléfono</h3>
+          <p class="contacto__card-texto">
+            <a href="tel:+34634959264">634 95 92 64</a><br>
+            
+          </p>
+        </div>
+
+        <div class="contacto__card contacto__card--redes">
+          <div class="contacto__icono">
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <h3 class="contacto__card-titulo">Síguenos</h3>
+          <div class="contacto__redes">
+            <a href="https://www.facebook.com/HeladosCaldosCrevillente/?locale=es_ES" class="contacto__red" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/heladoscaldos/?hl=es" class="contacto__red" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/34634959264" class="contacto__red" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="sabores">
-        <button class="carousel__btn carousel__btn--prev">
-  <i class="fas fa-chevron-left"></i>
-</button>
-<button class="carousel__btn carousel__btn--next">
-  <i class="fas fa-chevron-right"></i>
-</button>
-        <div class="sabores__contenido contenedor">
-          <h2 class="sabores__heading">Nuestros productos</h2>
-
-          <div class="carousel carousel--granizados">
-            <h3 class="carousel__heading">GRANIZADOS</h3>
-
-            <div class="carousel__contenido">
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/limon_destacado.png" alt="" />
-                </div>
-                <h4 class="sabor__nombre">Limón</h4>
-                <p class="sabor__precio">
-                  Refrescante granizado de limón natural con el punto perfecto
-                  de acidez. Ideal para los días calurosos de verano.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/cebada_destacado.png" alt="Granizado Cebada" />
-                </div>
-                <h4 class="sabor__nombre">Cebada</h4>
-                <p class="sabor__precio">
-                  Tradicional granizado de cebada con malta tostada. Sabor único
-                  y propiedades digestivas que refrescan el paladar.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/mojito.png" alt="Granizado Mojito" />
-                </div>
-                <h4 class="sabor__nombre">Mojito</h4>
-                <p class="sabor__precio">
-                  Explosivo granizado de mojito con menta fresca y lima.
-                  Sensación tropical que transporta a las mejores playas.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/horchata.png" alt="Granizado Horchata" />
-                </div>
-                <h4 class="sabor__nombre">Horchata</h4>
-                <p class="sabor__precio">
-                  Cremoso granizado de horchata valenciana con chufas
-                  auténticas. Tradición mediterránea en cada sorbo refrescante.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img src="src/img/cafe.png" alt="Granizado Café" />
-                </div>
-                <h4 class="sabor__nombre">Café</h4>
-                <p class="sabor__precio">
-                  Intenso granizado de café con granos seleccionados. Energía y
-                  frescor unidos en una experiencia única.
-                </p>
-              </div>
-
-              <div class="sabor">
-                <div class="sabor__imagen">
-                  <img
-                    src="src/img/mojitorosa.png"
-                    alt="Granizado Mojito Rosa"
-                  />
-                </div>
-                <h4 class="sabor__nombre">Mojito Rosa</h4>
-                <p class="sabor__precio">
-                  Delicado granizado de mojito con toque de frutos rojos.
-                  Elegancia y frescor en una combinación irresistible.
-                </p>
-              </div>
-            </div>
-
-            <nav></nav>
+      <!-- Mapa o imagen del local -->
+      <div class="contacto__visual">
+        <div class="contacto__mapa">
+          <img src="src/img/local.jpg" alt="Nuestro local en Crevillente" />
+          <div class="contacto__mapa-overlay">
+            <a href="https://www.google.com/maps/@38.243886,-0.8137159,17z" target="_blank" class="btn btn--mapa">
+  <i class="fas fa-map-marked-alt"></i>
+  Ver en Google Maps
+</a>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="sobre-nosotros">
-        <div class="sobre-nosotros__contenido">
-       <div class="sobre-nosotros__hero">
-        <h1 class="sobre-nosotros__heading">Sobre Nosotros</h1>
-       </div>
-       <div class="sobre-nosotros__grid">
-          
-           <div class="imagen__historia">
-  <img class="" src="./src/img/maquinas.jpg" alt="Nuestras máquinas de helados">
-</div>
-
-<div class="texto__historia">
-  <h3 class="sobre-nosotros__historia--heading">Nuestra Historia</h3>
-  <p>Nuestra historia comenzó hace más de 20 años cuando decidimos apostar por la elaboración artesanal de helados y granizados. Con una máquina tradicional y mucha ilusión, empezamos sirviendo a los vecinos de nuestro barrio en Crevillente.</p>
-  
-  <p>Mantenemos las recetas familiares que han pasado de generación en generación, respetando los métodos tradicionales de elaboración. Creemos firmemente en preservar los sabores auténticos que forman parte de nuestra cultura mediterránea.</p>
-  
-  <p>Hoy en día somos reconocidos en toda la comarca del Baix Vinalopó. Nuestros clientes vienen desde Elche y Alicante para disfrutar de nuestros granizados de limón y horchata tradicional. Porque cuando algo se hace bien, el tiempo lo demuestra.</p>
-</div>
-          
-       </div>
-       
-      </section>
-    </main>
+    <!-- Call to action final -->
+    <div class="contacto__cta">
+      <h3 class="contacto__cta-titulo">¿Tienes alguna pregunta?</h3>
+      <p class="contacto__cta-texto">
+        No dudes en contactarnos. Estaremos encantados de atenderte.
+      </p>
+      <div class="contacto__botones">
+        <a href="tel:+34965123456" class="btn btn--primario btn--telefono">
+          <i class="fas fa-phone"></i>
+          Llamar ahora
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
   <script type="module" src="src/main.js"></script>
-<script type="module" src="src/animaciones.js"></script>
+  <script type="module" src="src/animaciones.js"></script>
 </body>
+
 </html>
