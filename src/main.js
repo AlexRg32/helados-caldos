@@ -1,10 +1,13 @@
+
+
+// Mantener el carrusel existente como fallback
 document.addEventListener('DOMContentLoaded', function() {
+    // Tu código existente como backup
     const contenedorCarrusel = document.querySelector('.carousel__contenido');
     const btnSiguiente = document.querySelector('.carousel__btn--next');
     const btnAnterior = document.querySelector('.carousel__btn--prev');
     let indice = 0;
 
-    // Verificar que los elementos existen
     if (!contenedorCarrusel || !btnSiguiente || !btnAnterior) {
         console.error('No se encontraron los elementos del carrusel');
         return;
@@ -16,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             contenedorCarrusel.style.transform = `translateX(-${indice * (100 / 3)}%)`;
         }
-        console.log('Índice actual:', indice);
     }
 
     function siguiente() {
@@ -61,6 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
         moverCarrusel();
     });
 
-    // Inicializar el carrusel
     moverCarrusel();
 });
