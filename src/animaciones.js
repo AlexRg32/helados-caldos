@@ -132,9 +132,9 @@ const destacados = document.querySelectorAll(".destacado");
 destacados.forEach((destacado) => {
   destacado.addEventListener("mouseenter", () => {
     gsap.to(destacado, {
-      scale: 1.05,
-
-      duration: 0.3,
+      scale: 1.1,
+      boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
+      duration: 1,
       ease: "power4.out",
     });
   });
@@ -142,8 +142,8 @@ destacados.forEach((destacado) => {
   destacado.addEventListener("mouseleave", () => {
     gsap.to(destacado, {
       scale: 1,
-
-      duration: 0.3,
+      boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+      duration: 1,
       ease: "power4.out",
     });
   });
